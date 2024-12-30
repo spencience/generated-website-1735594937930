@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive encyclopedia of The Culture civilization, including detailed entries on technology, society, and history.">
+    <meta name="keywords" content="The Culture, Iain M Banks, Science Fiction, Space Opera, Encyclopedia, Special Circumstances">
+    <title>Encyclopedia of The Culture | Special Circumstances Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .orbital-ring {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #4fd1c5;
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px #4fd1c5;
+        }
+
+        .mind-pattern {
+            background: linear-gradient(45deg, #1a202c 25%, transparent 25%),
+                        linear-gradient(-45deg, #1a202c 25%, transparent 25%),
+                        linear-gradient(45deg, transparent 75%, #1a202c 75%),
+                        linear-gradient(-45deg, transparent 75%, #1a202c 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+
+        .entry-card {
+            transition: transform 0.3s ease;
+        }
+
+        .entry-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+    <!-- Header remains the same as template -->
+    <header class="bg-gray-800 border-b border-teal-500">
+        <!-- Header content as in template -->
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="mind-pattern rounded-lg p-6">
+            <div class="bg-gray-800 bg-opacity-90 rounded-lg p-6">
+                <div class="prose prose-invert max-w-none">
+                    <h1 class="text-4xl font-bold mb-8 text-teal-400">Encyclopedia of The Culture</h1>
+                    
+                    <div class="mb-8">
+                        <form method="GET" action="/generated-website-1735594937930/encyclopedia/search" class="flex gap-4">
+                            <input type="search" name="q" placeholder="Search the encyclopedia..." 
+                                   class="flex-grow p-2 rounded bg-gray-700 border border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-400">
+                            <button type="submit" class="px-6 py-2 bg-teal-500 rounded hover:bg-teal-600 transition">Search</button>
+                        </form>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <a href="/generated-website-1735594937930/encyclopedia/technology.html" class="entry-card block p-6 bg-gray-700 rounded-lg hover:bg-gray-600">
+                            <h3 class="text-xl font-bold mb-2 text-teal-400">Technology</h3>
+                            <p class="text-gray-300">Comprehensive guide to Culture technology, from basic tools to advanced systems.</p>
+                        </a>
+
+                        <a href="/generated-website-1735594937930/encyclopedia/society.html" class="entry-card block p-6 bg-gray-700 rounded-lg hover:bg-gray-600">
+                            <h3 class="text-xl font-bold mb-2 text-teal-400">Society & Culture</h3>
+                            <p class="text-gray-300">Social structures, customs, and daily life in The Culture civilization.</p>
+                        </a>
+
+                        <a href="/generated-website-1735594937930/encyclopedia/minds.html" class="entry-card block p-6 bg-gray-700 rounded-lg hover:bg-gray-600">
+                            <h3 class="text-xl font-bold mb-2 text-teal-400">Minds & AI</h3>
+                            <p class="text-gray-300">Details about artificial intelligences, ship minds, and their roles.</p>
+                        </a>
+
+                        <a href="/generated-website-1735594937930/encyclopedia/habitats.html" class="entry-card block p-6 bg-gray-700 rounded-lg hover:bg-gray-600">
+                            <h3 class="text-xl font-bold mb-2 text-teal-400">Habitats & Orbitals</h3>
+                            <p class="text-gray-300">Various types of Culture habitats and their specifications.</p>
+                        </a>
+
+                        <a href="/generated-website-1735594937930/encyclopedia/contact.html" class="entry-card block p-6 bg-gray-700 rounded-lg hover:bg-gray-600">
+                            <h3 class="text-xl font-bold mb-2 text-teal-400">Contact & SC</h3>
+                            <p class="text-gray-300">Information about Contact division and Special Circumstances.</p>
+                        </a>
+
+                        <a href="/generated-website-1735594937930/encyclopedia/history.html" class="entry-card block p-6 bg-gray-700 rounded-lg hover:bg-gray-600">
+                            <h3 class="text-xl font-bold mb-2 text-teal-400">Historical Events</h3>
+                            <p class="text-gray-300">Timeline and significant events in Culture history.</p>
+                        </a>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-gray-700 rounded-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-teal-400">Featured Article</h2>
+                        <h3 class="text-xl mb-2">Orbital Mechanics: The Art of Building Worlds</h3>
+                        <p class="text-gray-300 mb-4">An in-depth look at the engineering principles behind Culture Orbitals, including their construction, maintenance, and the role of Hub Minds in their operation.</p>
+                        <a href="/generated-website-1735594937930/encyclopedia/articles/orbital-mechanics.html" class="text-teal-400 hover:underline">Read more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-teal-500">
+        <!-- Footer content as in template -->
+    </footer>
+
+    <!-- Mobile Navigation Menu as in template -->
+</body>
+</html>

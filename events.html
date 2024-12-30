@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Mega Burger Experience - World's Biggest Burger</title>
+    <meta name="description" content="Reserve your spot to witness and taste the World's Biggest Burger. Group tours, special events, and eating challenge bookings available.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-amber-50">
+    <header class="bg-gradient-to-r from-orange-600 to-red-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <nav class="flex flex-col md:flex-row justify-between items-center">
+                <a href="/generated-website-1735565872788/" class="text-3xl font-bold mb-4 md:mb-0">
+                    🍔 MEGA BURGER
+                </a>
+                <ul class="flex space-x-6">
+                    <li><a href="https://spencience.github.io/generated-website-1735565872788/history.html" class="hover:text-yellow-300">History</a></li>
+                    <li><a href="https://spencience.github.io/generated-website-1735565872788/ingredients.html" class="hover:text-yellow-300">Ingredients</a></li>
+                    <li><a href="https://spencience.github.io/generated-website-1735565872788/gallery.html" class="hover:text-yellow-300">Gallery</a></li>
+                    <li><a href="https://spencience.github.io/generated-website-1735565872788/challenge.html" class="hover:text-yellow-300">Eating Challenge</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h1 class="text-4xl font-bold text-orange-700 mb-6">Book Your Mega Burger Experience</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="booking-options">
+                    <h2 class="text-2xl font-semibold mb-4">Available Experiences</h2>
+                    <div class="space-y-4">
+                        <div class="p-4 border rounded-lg hover:border-orange-500 cursor-pointer">
+                            <h3 class="text-xl font-bold text-orange-600">Standard Tour</h3>
+                            <p class="text-gray-600">90-minute guided tour including kitchen visit and tasting</p>
+                            <p class="text-orange-700 font-bold mt-2">$29.99/person</p>
+                        </div>
+                        
+                        <div class="p-4 border rounded-lg hover:border-orange-500 cursor-pointer">
+                            <h3 class="text-xl font-bold text-orange-600">VIP Experience</h3>
+                            <p class="text-gray-600">3-hour exclusive tour with cooking demonstration and full meal</p>
+                            <p class="text-orange-700 font-bold mt-2">$99.99/person</p>
+                        </div>
+                        
+                        <div class="p-4 border rounded-lg hover:border-orange-500 cursor-pointer">
+                            <h3 class="text-xl font-bold text-orange-600">Challenge Booking</h3>
+                            <p class="text-gray-600">Attempt to eat our 10-pound burger challenge</p>
+                            <p class="text-orange-700 font-bold mt-2">$149.99/attempt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form">
+                    <h2 class="text-2xl font-semibold mb-4">Make Your Reservation</h2>
+                    <form method="GET" action="/generated-website-1735565872788/booking-confirmation" class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Select Experience</label>
+                            <select name="experience" class="w-full p-2 border rounded">
+                                <option value="standard">Standard Tour</option>
+                                <option value="vip">VIP Experience</option>
+                                <option value="challenge">Challenge Booking</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Date</label>
+                            <input type="date" name="date" class="w-full p-2 border rounded" required>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Number of Guests</label>
+                            <input type="number" name="guests" min="1" max="20" class="w-full p-2 border rounded" required>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700">
+                            Book Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p>📍 Mega Burger Plaza</p>
+                    <p>📞 1-800-BIG-BURGER</p>
+                    <p>📧 info@worldsbiggestburger.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://spencience.github.io/generated-website-1735565872788/book-visit.html" class="hover:text-orange-400">Book a Visit</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1735565872788/press.html" class="hover:text-orange-400">Press Kit</a></li>
+                        <li><a href="https://spencience.github.io/generated-website-1735565872788/careers.html" class="hover:text-orange-400">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://social.burger/megaburger" class="hover:text-orange-400">🌐</a>
+                        <a href="https://chirp.burger/megaburger" class="hover:text-orange-400">🐦</a>
+                        <a href="https://picshare.burger/megaburger" class="hover:text-orange-400">📸</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 World's Biggest Burger. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact methods for the Special Circumstances Archive - The Culture Series knowledge repository">
+    <meta name="keywords" content="Culture Series, Special Circumstances, Contact, Iain M Banks, Ship Minds">
+    <title>Contact | Special Circumstances Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .orbital-ring {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #4fd1c5;
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px #4fd1c5;
+        }
+
+        .mind-pattern {
+            background: linear-gradient(45deg, #1a202c 25%, transparent 25%),
+                        linear-gradient(-45deg, #1a202c 25%, transparent 25%),
+                        linear-gradient(45deg, transparent 75%, #1a202c 75%),
+                        linear-gradient(-45deg, transparent 75%, #1a202c 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+
+        .neural-input {
+            background: rgba(79, 209, 197, 0.1);
+            border: 1px solid #4fd1c5;
+            transition: all 0.3s ease;
+        }
+
+        .neural-input:focus {
+            box-shadow: 0 0 15px rgba(79, 209, 197, 0.3);
+            border-color: #2dd4bf;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+    <header class="bg-gray-800 border-b border-teal-500">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="orbital-ring"></div>
+                    <h1 class="text-3xl font-bold glow-text">
+                        <a href="/generated-website-1735594937930/" class="hover:text-teal-400 transition">Special Circumstances Archive</a>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1735594937930/books.html" class="hover:text-teal-400 transition">Books</a>
+                    <a href="/generated-website-1735594937930/minds.html" class="hover:text-teal-400 transition">Ship Minds</a>
+                    <a href="/generated-website-1735594937930/tech.html" class="hover:text-teal-400 transition">Technology</a>
+                    <a href="/generated-website-1735594937930/society.html" class="hover:text-teal-400 transition">Society</a>
+                    <a href="/generated-website-1735594937930/encyclopedia.html" class="hover:text-teal-400 transition">Encyclopedia</a>
+                </nav>
+                <button class="md:hidden text-teal-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="mind-pattern rounded-lg p-6">
+            <div class="bg-gray-800 bg-opacity-90 rounded-lg p-6">
+                <div id="content" class="prose prose-invert max-w-none">
+                    <h2 class="text-2xl font-bold mb-6 text-teal-400">Contact Special Circumstances</h2>
+                    
+                    <div class="mb-8">
+                        <p class="mb-4">The Special Circumstances Archive welcomes communications from all civilizations, whether Contact-affiliated or not. Please note that response times may vary depending on your technological development level and security clearance.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-teal-300">Neural Lace Communication</h3>
+                            <p>For Culture citizens with neural lace implants, direct thought-form submission is available at:</p>
+                            <code class="block p-3 bg-gray-900 rounded">thought://sc.archive/contact</code>
+                        </div>
+
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-semibold text-teal-300">Terminal Interface</h3>
+                            <p>For those using standard terminals or primitive computing devices:</p>
+                            <form method="GET" action="/generated-website-1735594937930/contact/submit" class="space-y-4">
+                                <input type="text" name="name" placeholder="Designation/Name" class="w-full p-2 rounded neural-input">
+                                <input type="text" name="civilization" placeholder="Civilization Level (1-8)" class="w-full p-2 rounded neural-input">
+                                <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-2 rounded neural-input"></textarea>
+                                <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded transition">Transmit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-4 bg-gray-700 rounded-lg">
+                        <h3 class="text-xl font-semibold text-teal-300 mb-4">Emergency Contact</h3>
+                        <p>For urgent matters involving potential existential threats or significant cultural interventions, please use the following emergency channels:</p>
+                        <ul class="list-disc list-inside mt-2 space-y-2">
+                            <li>Hyperspace Signal: <code>HS://emergency.contact/SC-immediate</code></li>
+                            <li>Gridfire Beacon: <code>GF://urgent.archive.sc/priority-one</code></li>
+                            <li>Hub Mind Direct: <code>HM://archive.hub/emergency</code></li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 text-sm text-gray-400">
+                        <p>Note: All communications are monitored by Ship Minds and may be archived for future reference. Special Circumstances reserves the right to intervene in any situation deemed necessary for the greater good of galactic civilization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-teal-500">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm text-gray-400">
+                    Archived by Contact | Monitored by Special Circumstances
+                </div>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="/generated-website-1735594937930/about.html" class="text-sm text-gray-400 hover:text-teal-400 transition">About</a>
+                    <a href="/generated-website-1735594937930/contact.html" class="text-sm text-gray-400 hover:text-teal-400 transition">Contact</a>
+                    <a href="/generated-website-1735594937930/disclaimer.html" class="text-sm text-gray-400 hover:text-teal-400 transition">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="hidden fixed inset-0 bg-gray-900 bg-opacity-90 z-50">
+        <div class="flex flex-col items-center justify-center h-full space-y-6">
+            <a href="/generated-website-1735594937930/books.html" class="text-xl hover:text-teal-400 transition">Books</a>
+            <a href="/generated-website-1735594937930/minds.html" class="text-xl hover:text-teal-400 transition">Ship Minds</a>
+            <a href="/generated-website-1735594937930/tech.html" class="text-xl hover:text-teal-400 transition">Technology</a>
+            <a href="/generated-website-1735594937930/society.html" class="text-xl hover:text-teal-400 transition">Society</a>
+            <a href="/generated-website-1735594937930/encyclopedia.html" class="text-xl hover:text-teal-400 transition">Encyclopedia</a>
+        </div>
+    </div>
+</body>
+</html>

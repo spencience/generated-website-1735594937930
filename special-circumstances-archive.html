@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official archive of Special Circumstances operations, mission reports, and classified information from The Culture civilization.">
+    <meta name="keywords" content="Special Circumstances, The Culture, Iain M Banks, Ship Minds, Contact, classified missions">
+    <title>The Culture Series Hub | Special Circumstances Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .orbital-ring {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #4fd1c5;
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px #4fd1c5;
+        }
+
+        .mind-pattern {
+            background: linear-gradient(45deg, #1a202c 25%, transparent 25%),
+                        linear-gradient(-45deg, #1a202c 25%, transparent 25%),
+                        linear-gradient(45deg, transparent 75%, #1a202c 75%),
+                        linear-gradient(-45deg, transparent 75%, #1a202c 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+
+        .classified-stamp {
+            position: relative;
+            border: 2px solid #ef4444;
+            color: #ef4444;
+            transform: rotate(-15deg);
+            padding: 0.5rem 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+    <header class="bg-gray-800 border-b border-teal-500">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="orbital-ring"></div>
+                    <h1 class="text-3xl font-bold glow-text">
+                        <a href="/generated-website-1735594937930/" class="hover:text-teal-400 transition">Special Circumstances Archive</a>
+                    </h1>
+                </div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="/generated-website-1735594937930/operations.html" class="hover:text-teal-400 transition">Operations</a>
+                    <a href="/generated-website-1735594937930/agents.html" class="hover:text-teal-400 transition">Agents</a>
+                    <a href="/generated-website-1735594937930/missions.html" class="hover:text-teal-400 transition">Missions</a>
+                    <a href="/generated-website-1735594937930/artifacts.html" class="hover:text-teal-400 transition">Artifacts</a>
+                    <a href="/generated-website-1735594937930/reports.html" class="hover:text-teal-400 transition">Reports</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="mind-pattern rounded-lg p-6">
+            <div class="bg-gray-800 bg-opacity-90 rounded-lg p-6">
+                <div id="content" class="prose prose-invert max-w-none">
+                    <div class="classified-stamp mb-8">Level 5 Clearance Required</div>
+                    
+                    <h2 class="text-2xl font-bold mb-6 text-teal-400">Welcome to the Special Circumstances Archive</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Recent Operations</h3>
+                            <ul class="space-y-4">
+                                <li>
+                                    <a href="/generated-website-1735594937930/operations/orbital-intervention-47.html" class="block p-4 border border-teal-500 rounded hover:bg-gray-700 transition">
+                                        <span class="text-teal-400">Operation Orbital Intervention 47</span>
+                                        <p class="text-sm text-gray-400 mt-2">Status: Completed | Location: Masaq' Orbital</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/generated-website-1735594937930/operations/sublimed-contact-12.html" class="block p-4 border border-teal-500 rounded hover:bg-gray-700 transition">
+                                        <span class="text-teal-400">Operation Sublimed Contact 12</span>
+                                        <p class="text-sm text-gray-400 mt-2">Status: Ongoing | Location: [REDACTED]</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Active Agents</h3>
+                            <div class="space-y-4">
+                                <a href="/generated-website-1735594937930/agents/diziet-sma.html" class="block p-4 border border-teal-500 rounded hover:bg-gray-700 transition">
+                                    <span class="text-teal-400">Diziet Sma</span>
+                                    <p class="text-sm text-gray-400 mt-2">Current Assignment: Diplomatic Intervention</p>
+                                </a>
+                                <a href="/generated-website-1735594937930/agents/zakalwe.html" class="block p-4 border border-teal-500 rounded hover:bg-gray-700 transition">
+                                    <span class="text-teal-400">Cheradenine Zakalwe</span>
+                                    <p class="text-sm text-gray-400 mt-2">Status: Field Active</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-xl font-semibold mb-4">Latest Mission Reports</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b border-teal-500">
+                                        <th class="text-left p-4">Mission ID</th>
+                                        <th class="text-left p-4">Description</th>
+                                        <th class="text-left p-4">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-4"><a href="/generated-website-1735594937930/missions/SC-7729.html" class="text-teal-400 hover:underline">SC-7729</a></td>
+                                        <td class="p-4">Intervention in Pre-Contact Society</td>
+                                        <td class="p-4"><span class="text-green-400">Active</span></td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-4"><a href="/generated-website-1735594937930/missions/SC-7728.html" class="text-teal-400 hover:underline">SC-7728</a></td>
+                                        <td class="p-4">Artifact Recovery - Excession Class</td>
+                                        <td class="p-4"><span class="text-yellow-400">Pending</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-teal-500">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm text-gray-400">
+                    Archived by Contact | Monitored by Special Circumstances
+                </div>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="/generated-website-1735594937930/about.html" class="text-sm text-gray-400 hover:text-teal-400 transition">About</a>
+                    <a href="/generated-website-1735594937930/security.html" class="text-sm text-gray-400 hover:text-teal-400 transition">Security</a>
+                    <a href="/generated-website-1735594937930/access.html" class="text-sm text-gray-400 hover:text-teal-400 transition">Access Levels</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
